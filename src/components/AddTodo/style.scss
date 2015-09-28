@@ -1,0 +1,17 @@
+@import '../../scss/variables';
+
+
+.AddTodo {
+    text-align: center;
+    &__input {
+        display: block;
+        margin: .5em 0;
+        padding: .5em;
+        width: 100%;
+    }
+    &__btn {
+        padding: 1em 3em;
+        background: $blue;
+        border: 1px solid darken($blue, 10%);
+    }
+}

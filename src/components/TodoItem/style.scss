@@ -1,0 +1,24 @@
+@import '../../scss/variables';
+
+.TodoItem {
+    position: relative;
+    display: block;
+    padding: 1em;
+    background: $gray;
+    cursor: pointer;
+    user-select: none;
+    input {
+        margin-right: .75em;
+    }
+    + .TodoItem {
+        margin-top: .5em;
+    }
+    &--completed {
+        background: $green;
+    }
+    &__remove {
+        position: absolute;
+        top: .5em;
+        right: 1em;
+    }
+}
